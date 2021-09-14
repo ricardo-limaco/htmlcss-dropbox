@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+/**************************************************
+* Selettori Tag
+**************************************************/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 77px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+h4, h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+small {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+/**************************************************
+* Nav
+**************************************************/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 17px;
+  background-color: white;
+  z-index: 99;
+}
+
+nav div a > img {
+  vertical-align: middle;
+}
+
+.nav-right {
+  float: right;
+}
+
+
+nav ul{
+  display: inline-block;
+  /* line-height: 35px; */
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 17px;
+  vertical-align: middle;
+}
+/**************************************************
+* Hero
+**************************************************/
+.hero {
+  margin-top: 72px;
+  background-color: #B4D0E7;
+}
+
+.hero .container-large.row {
+  position: relative;
+  top: 83px;
+}
+
+.hero h1 {
+  padding-bottom: 45px;
+}
+
+.hero .col_3_9 p:nth-child(1) {
+  padding: 0 44px 30px 0;
+}
+
+.hero .col_3_9 p:nth-child(3) {
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.hero .col_3_9 i:nth-child(4) {
+  padding-top: 40px;
+  font-size: 40px;
+}
+
+.hero .col_6_9 img {
+  background-size: cover;
+  width: 100%;
+}
+/**************************************************
+* 3 Piani Titolo
+**************************************************/
+.container-small h2 {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.container-small form {
+  padding-bottom: 50px;
+}
+
+.container-small form p:nth-child(2) {
+  padding-right: 20px;
+}
+/**************************************************
+* 3 Piani Colonne
+**************************************************/
+.container-small .row .col_3_9 {
+  padding: 5px;
+}
+
+.product {
+  border: 1px solid #d0d0d3;
+}
+.container-small .product p {
+  padding: 10px 0;
+}
+
+
+.product-info {
+  padding: 20px 15px;
+}
+
+.container-small .row .col_3_9 .product ul li {
+  padding-bottom: 15px;
+}
+
+
+
+
+
+/**************************************************
+* Button
+**************************************************/
+.bt-large {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 22px;
+  transition: 0.2s;
+}
+
+.bt-small {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 7px 20px;
+  transition: 0.2s;
+}
+
+.bt-blue {
+  background-color: #0061FF;
+  color: white;
+}
+/**************************************************
+* Utilities
+**************************************************/
+.inline-block {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #d0d0d3;
+}
+
+.grey {
+  color: #6e7d8a;
+}
+.blue {
+  color: #0061FF;
+}
+
+.pd-bottom {
+  padding-bottom: 15px;
+}
+/* Container */
+.container-large {
+  max-width: 1367px;
+  width: 100%;
+  margin: auto;
+}
+
+.container-small {
+  max-width: 1010px;
+  width: 100%;
+  margin: auto;
+}
+
+
+/* Row e Columns */
+.row::after {         
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* .row > * {
+  float: left;
+} */
+[class*="col_"] {
+  float: left;
+}
+
+.row > .float-right {
+  float: right;
+}
+
+.col_1_9 {
+  width: calc(100% / 9);
+}
+
+.col_2_9 {
+  width: calc(100% / 9 * 2);
+}
+
+.col_3_9 {
+  width: calc(100% / 9 * 3);
+}
+
+.col_4_9 {
+  width: calc(100% / 9 * 4);
+}
+
+.col_5_9 {
+  width: calc(100% / 9 * 5);
+}
+
+.col_6_9 {
+  width: calc(100% / 9 * 6);
+}
+
+.col_1_5 {
+  width: calc(100% / 5);
+}
