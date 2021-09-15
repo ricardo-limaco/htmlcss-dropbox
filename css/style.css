@@ -127,9 +127,9 @@ nav ul li a {
   width: 100%;
 }
 /**************************************************
-* 3 Piani Titolo
+* 3 Plan Titolo
 **************************************************/
-.container-small.pd-bottom-60 h2 {
+main .container-small._3_plan.pd-bottom-60 h2 {
   padding-top: 150px;
   padding-bottom: 50px;
 }
@@ -142,7 +142,7 @@ nav ul li a {
   padding-right: 20px;
 }
 /**************************************************
-* 3 Piani Colonne
+* 3 Plan Colonne
 **************************************************/
 .container-small.pd-bottom-60 .row .col_3_9 {
   padding: 13px;
@@ -189,6 +189,151 @@ main .container-small .col_4_9.pd-left-50 > p {
 }
 
 /**************************************************
+* 6 Block
+**************************************************/
+.container-small._6_block .row .col_3_9 {
+  padding: 13px
+}
+
+
+
+
+/**************************************************
+* Square Container
+**************************************************/
+.square-container {
+  height: calc(30vw);
+}
+
+.square-container > div {
+  float: left;
+  /* min-height: 200px; */
+}
+
+.square-container-center {
+  width: 40%;
+  height: 100%;
+  overflow: auto;
+  background-color: #f5f5f5;
+  padding: 60px 60px 0;
+}
+
+.square-container-lateral{
+  width: 30%;
+}
+
+.square {
+  width: 50%;
+  float: left;
+  height: calc(30vw / 2);
+  position: relative;
+  padding: 14px;
+
+}
+
+.square-container .square-container-center img {
+  width: 20%;
+  padding-bottom: 40px;
+}
+
+.square-container .square-container-center div {
+  width: 8%;
+  border-bottom: 1px solid #d0d0d3;
+}
+
+
+
+
+.square-container .square-container-lateral div img {
+  filter: invert(1);
+}
+.square-container .square-container-lateral .square img {
+  max-width: 55%;
+  max-height: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.square-container .square-container-lateral:nth-child(1) div:nth-child(1) {
+  background-color: #a2d39b;
+  border: 13px solid #d0e9cd;
+}
+.square-container .square-container-lateral:nth-child(1) div:nth-child(2) {
+  background-color: #61082b;
+}
+.square-container .square-container-lateral:nth-child(1) div:nth-child(3) {
+  background-color: #0093ce;
+}
+.square-container .square-container-lateral:nth-child(1) div:nth-child(4) {
+  background-color: #ff1c1c;
+}
+
+.square-container .square-container-lateral:nth-child(3) div:nth-child(1) {
+  background-color: #d5001f;
+}
+.square-container .square-container-lateral:nth-child(3) div:nth-child(2) {
+  background-color: #b4d0e7;
+}
+.square-container .square-container-lateral:nth-child(3) div:nth-child(3) {
+  background-color: #0d2481;
+}
+.square-container .square-container-lateral:nth-child(3) div:nth-child(4) {
+  background-color: #ffd830;
+}
+
+
+/**************************************************
+* Sky
+**************************************************/
+.bc-sky .container-small {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+
+/**************************************************
+* Accordion
+**************************************************/
+.accordion-item {
+  border-bottom: 1px solid #d0d0d3;
+  position: relative;
+  padding-right: 60px;
+}
+
+.accordion-container .accordion-item:nth-child(1) {
+  border-top: 1px solid #d0d0d3;
+}
+
+.accordion-item h4 {
+  padding: 35px 0;
+}
+
+.accordion-item-icon {
+  position: absolute;
+  right: 20px;
+  transform: rotateZ(0deg);
+  transition: transform 0.3s;
+}
+
+
+
+
+/**************************************************
+* Footer
+**************************************************/
+footer .row .col_1_5 li, a {
+  color: white;
+}
+
+footer .row .col_1_5 li a {
+  padding-bottom: 13px;
+}
+
+
+
+/**************************************************
 * Button
 **************************************************/
 .bt-large {
@@ -198,7 +343,6 @@ main .container-small .col_4_9.pd-left-50 > p {
   transition: 0.2s;
   text-align: center;
 }
-
 
 .bt-small {
   font-size: 16px;
@@ -215,6 +359,11 @@ main .container-small .col_4_9.pd-left-50 > p {
 .bt-border {
   border: 1px solid black;
   color: black;
+}
+
+.bt-white {
+  color: black;
+  background-color: white;
 }
 /**************************************************
 * Utilities
@@ -241,14 +390,30 @@ main .container-small .col_4_9.pd-left-50 > p {
 .border-bottom {
   border-bottom: 1px solid #d0d0d3;
 }
+.border-top {
+  border-top: 1px solid #d0d0d3;
+}
 
+/* Color */
 .grey {
   color: #6e7d8a;
 }
 .blue {
   color: #0061FF;
 }
- 
+
+.bordeaux {
+  color: #61082B;
+}
+
+.bc-sky {
+  background-color: #B4D0E7;
+}
+
+.bc-black {
+  background-color: black;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -290,8 +455,16 @@ main .container-small .col_4_9.pd-left-50 > p {
   padding-bottom: 25px;
 }
 
+.pd-bottom-40 {
+  padding-bottom: 40px;
+}
+
 .pd-bottom-60 {
   padding-bottom: 60px;
+}
+
+.pd-bottom-100 {
+  padding-bottom: 100px;
 }
 
 .pd-left-20 {
